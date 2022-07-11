@@ -1,7 +1,7 @@
 # HeroIcon for Nuxt and Nuxt 3
 
 ```bash
-yarn add -D nuxt-hero-icons
+npm install roco3d/nuxt-hero-icons
 ```
 
 ```javascript
