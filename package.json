@@ -29,6 +29,6 @@
     "dev": "nuxi dev"
   },
   "devDependencies": {
-    "nuxt3": "latest"
+    "nuxt": "npm:nuxt3@latest"
   }
 }
