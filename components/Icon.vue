@@ -1,6 +1,6 @@
 <!-- Icons from https://heroicons.com/ -->
 <template>
-  <span v-html="getSVG(name)"></span>
+  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 19 19" v-html="getSVG(name)"></svg>
 </template>
 <script>
 import { defineComponent, ref } from "vue";
@@ -25,10 +25,10 @@ export default defineComponent({
           fill = 'fill="currentColor" viewBox="0 0 19 19"';
         }else{
           path = OutlineIcons[name];
-          fill = 'fill="none" stroke="currentColor" viewBox="0 0 24 24"';
+          fill = 'fill="none" stroke="currentColor" viewBox="0 0 19 19"';
         }
       }
-      const svg = `<svg ${fill} class="w-6 h-6"  aria-hidden="true"  xmlns="http://www.w3.org/2000/svg"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="${path}" /></svg>`;
+      const svg = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="${path}" />`;
       return svg;
     },
   },
